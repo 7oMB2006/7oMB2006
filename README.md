@@ -8,4 +8,6 @@
 
 <img src="./assets/current-focus-heatmap.png" alt="当前精力投入热力图：基于 AI 的金融量化 60%，AI Agent 38%，AI 绘画 2%。" width="100%" />
 
+<img src="./assets/life-kline-title.svg" alt="What if life could be quantified with OHLC?" width="100%" />
+
 <img src="./assets/life-kline.svg" alt="人生 K 线" width="100%" />
