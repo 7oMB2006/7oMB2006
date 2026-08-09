@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">7oMB2006 profile header</title>
+  <desc id="desc">A dark violet gradient banner with the words 7oMB2006, Build, inspect, iterate, and a systems map motif.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090719"/>
+      <stop offset="0.48" stop-color="#19113a"/>
+      <stop offset="1" stop-color="#0c243b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#c4b5fd" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="360" rx="18" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#grid)"/>
+  <circle cx="1030" cy="42" r="220" fill="#7c3aed" fill-opacity=".18"/>
+  <circle cx="1110" cy="300" r="245" fill="#0891b2" fill-opacity=".12"/>
+  <path d="M690 256 C770 188 818 284 895 190 S1017 116 1118 170" fill="none" stroke="url(#accent)" stroke-width="3" stroke-opacity=".74"/>
+  <path d="M738 112 L835 162 L919 102 L1040 150 L1132 88" fill="none" stroke="#a78bfa" stroke-width="2" stroke-opacity=".45"/>
+  <g fill="#0d1020" stroke="url(#accent)" stroke-width="3">
+    <circle cx="690" cy="256" r="10"/>
+    <circle cx="895" cy="190" r="10"/>
+    <circle cx="1118" cy="170" r="10"/>
+    <circle cx="738" cy="112" r="8"/>
+    <circle cx="919" cy="102" r="8"/>
+    <circle cx="1132" cy="88" r="8"/>
+  </g>
+  <text x="74" y="123" fill="#e9e7ff" font-family="Segoe UI, Arial, sans-serif" font-size="63" font-weight="700" letter-spacing="-2">7oMB2006</text>
+  <rect x="78" y="151" width="328" height="4" rx="2" fill="url(#accent)"/>
+  <text x="78" y="207" fill="#c4b5fd" font-family="Consolas, SFMono-Regular, monospace" font-size="24" letter-spacing="1">BUILD · INSPECT · ITERATE</text>
+  <text x="78" y="257" fill="#a3b5c7" font-family="Segoe UI, Arial, sans-serif" font-size="22">Agents / LLM systems / multimodal research / markets</text>
+  <text x="78" y="307" fill="#64748b" font-family="Consolas, SFMono-Regular, monospace" font-size="16">curiosity → evidence → useful systems</text>
+</svg>
