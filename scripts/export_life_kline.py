@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -12,7 +12,6 @@ LEFT = 36
 RIGHT = 36
 TOP = 30
 BOTTOM = 52
-MAX_DAYS = 90
 UP = "#E85B55"
 DOWN = "#67C49A"
 BACKGROUND = "#0D1117"
@@ -58,8 +57,7 @@ def read_days(source: Path) -> list[dict[str, Any]]:
 def select_window(days: list[dict[str, Any]]) -> list[dict[str, Any]]:
     if not days:
         raise ValueError("No K-line data is available to export.")
-    start_date = days[-1]["date"] - timedelta(days=MAX_DAYS - 1)
-    return [day for day in days if day["date"] >= start_date]
+    return days
 
 
 def y_position(value: float, minimum: float, maximum: float) -> float:
