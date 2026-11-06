@@ -14,6 +14,7 @@ TOP = 30
 BOTTOM = 52
 UP = "#E85B55"
 DOWN = "#67C49A"
+FLAT = "#F2F2F2"
 BACKGROUND = "#0D1117"
 MUTED = "#8B949E"
 AXIS = "#30363D"
@@ -115,7 +116,7 @@ def chart_svg(days: list[dict[str, Any]]) -> str:
     low_index = min(range(len(days)), key=lambda index: days[index]["low"])
     for index, day in enumerate(days):
         x = x_position(index, len(days))
-        color = UP if day["close"] >= day["open"] else DOWN
+        color = UP if day["close"] > day["open"] else DOWN if day["close"] < day["open"] else FLAT
         y_high = y_position(day["high"], minimum, maximum)
         y_low = y_position(day["low"], minimum, maximum)
         y_open = y_position(day["open"], minimum, maximum)
